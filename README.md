@@ -78,7 +78,7 @@ If the error value of the predicted value is equal to the target value, the loss
 
 ALE provides the correct loss value and gradient even when training using continuous labels between 0 and 1
 
-<img src="https://user-images.githubusercontent.com/43339281/197680768-d923d89f-367b-4958-b8e0-74861987cb91.png" width="400px">
+<img src="https://user-images.githubusercontent.com/43339281/201013651-fea34060-8f20-42a5-b480-284dc183ee59.png" width="400px">
 
 <img src="https://user-images.githubusercontent.com/43339281/197663446-3e3aa5dc-a332-417e-9bfa-3df38b7c7bf2.png" width="400px">
 
@@ -134,7 +134,7 @@ Focal loss helps focus on hard samples by giving lower weights to easy samples t
 
 ALE can also do this the same and it's very simple and intuitive
 
-<img src="https://user-images.githubusercontent.com/43339281/197680936-b9dcb3d9-9a07-4b8d-a969-c1ad5a56b426.png" width="600px">
+<img src="https://user-images.githubusercontent.com/43339281/201014039-cc008328-24ee-435d-b9d6-b86058079a78.png" width="600px">
 
 <img src="https://user-images.githubusercontent.com/43339281/197667902-363e096f-f43a-40ff-9b62-ff5e54b867a0.png" width="400px">
 
