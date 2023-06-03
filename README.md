@@ -158,23 +158,3 @@ epochs : 10 (Adam for 7 epochs, Nesterov SGD for 3 epochs)
 1.0	| 0.8473 | **0.8584**
 2.0	| 0.8488 | **0.8574**
 avg	| 0.8531 | **0.8595**
-
-If you use ALE, it can be useful if you combine classification and regression in one output layer
-
-For example, YOLO performs classification and regression on one layer at the same time
-
-YOLO v1 used L2 loss for both classification and regression problems as a loss function, but later versions improved to use BCE for classification problems
-
-Currently, IoU loss is used for bounding box regression, but if you do not use IoU,
-
-We would have intuitively used L2 loss for bounding box regression
-
-But in this case, the gradient of BCE and L2 propagates together, causing gradient imbalance and ultimately not being able to perform as much as we want
-
-However, using ALE for bounding box regression ensures that learning is more stable because it propagates the same log scale gradient to all layers
-
-I have found a suitable loss function to train a model that can use both classification and regression with consecutive values between 0 and 1 as a target, but I failed
-
-So I built the ALE, and I actually used it to train various models, including classification, regression, object detection, pose estimation etc
-
-This is open to the public and anyone can use it
