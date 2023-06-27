@@ -58,7 +58,7 @@ class AbsoluteLogarithmicError(tf.keras.losses.Loss):
         self.gamma = gamma
         self.label_smoothing = label_smoothing
         self.reduce = reduce
-        assert 0.0 <= self.alpha <= 0.5
+        assert 0.0 <= self.alpha <= 1.0
         assert self.gamma == 0.0 or self.gamma >= 1.0
         assert 0.0 <= self.label_smoothing <= 0.5
         assert self.reduce in ['none', 'mean', 'sum', 'sum_over_batch_size']
